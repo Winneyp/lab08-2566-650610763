@@ -5,13 +5,19 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    // Main container
     <div className="container mx-auto">
-      {/* header section */}
-      <Header></Header>
-      <TaskInput></TaskInput>
-      <Task></Task>
-      <Footer></Footer>
+      <Header />
+      <div style={{ maxWidth: "400px" }} className="mx-auto">
+        <TaskInput />
+        <Task title="Read a book" />
+        <Task title="Take a shower" />
+        <Task title="Sleep" />
+        <Footer
+          year="2023"
+          fullname="Tayakorn Aowrattanakul"
+          studentId="650610763"
+        />
+      </div>
     </div>
   );
 }

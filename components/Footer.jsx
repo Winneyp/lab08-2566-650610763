@@ -1,8 +1,8 @@
-export const Footer = () => {
+export const Footer = (foot) => {
   return (
     <div className="mt-3">
       <p className="text-secondary text-center">
-        copyright © 2023 Tayakorn Aowrattanakul 650610763
+        copyright © {foot.year} {foot.fullname} {foot.studentId}
       </p>
     </div>
   );
